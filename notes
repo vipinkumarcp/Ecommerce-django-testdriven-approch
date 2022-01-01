@@ -1,0 +1,35 @@
+set up venv - py -m venv venv
+activate venv - source venv/scripts/activate
+install django - pip install django (latest version.here it is 4.0)
+create a new project - django-admin startproject ecommerce
+set up test environmentusing pytest - pip install pytest
+install pytest django plugin- pip install pytest-django
+install pytest-factoryboy (allow us to generate data automatically/dynamically for testing database) - pip install pytest-factoryboy
+install pytest selenium - pip install pytest-selenium
+generate all the packages installed till now - pip freeze >requirments.txt
+create a custom dashboard for test app inside ecommerce main folder - django-admin startapp dashboard
+delete test test file inside new app dashboard and create the tests folder.inside test folder create __init__ file :C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\dashboard\tests\__init__.py
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\dashboard\tests\test_selenium_dashboard.py inside tests folder
+run pyest to test pytest : output - no tests ran in 0.15 (py test only looking for a file start with test..foldername and function name doesn't matter)
+create C:\Users\vipin\Realprojects\ecommerce_django\pytest.ini - to allow customiziation for pytest
+create C:\Users\vipin\Realprojects\ecommerce_django\conftest.py -look up before running pytest
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\tests for general tests
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\tests\selenium.py for common seleinum test 
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\tests\fixtures.py to use database instead of test database
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\dashboard\fixtures -fixtures build preoccupied datta that can be inserted into database
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\dashboard\fixtures\db_admin_fixture.json - create a test database
+pip install black - helps format code
+
+create an new app inside inventory folder - django-admin startapp inventory
+settings - update installed apps in settings.py - add ecommerce.inventory
+go to ineventory apps.. change name to ecommerce.inventory
+create new folder test inide inventory C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\inventory\tests
+creata a new file test_db_fixtures.py inside test folder C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\inventory\tests\test_db_fixtures.py
+create facory in C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\tests\factories.py
+install django-mptt (for hirarical model) pip install django-mptt
+in inventory create new folder fixtures C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\inventory\fixtures
+create C:\Users\vipin\Realprojects\ecommerce_django\ecommerce\inventory\fixtures\db_category_fixtures.json
+registor model in admin panel of inventory
+manage.py dumpdata inventory.category --indent 4 > new.json to create json file
+
+done upto 2:22:16
